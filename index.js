@@ -34,7 +34,7 @@ var msg = message.content.toUpperCase();
 	}
 	
 
-	 /*async run(message) {
+	 async run(message) {
     let toMeme = ['https://i.redd.it/0ilh488xbudz.png',
       'https://cdn.discordapp.com/attachments/310611569794875404/353539349742092289/image.jpg',
       'http://weknowmemes.com/wp-content/uploads/2012/02/the-internet-is-a-series-of-tubes-and-theyre-full-of-cats.jpg',
@@ -47,12 +47,8 @@ var msg = message.content.toUpperCase();
     file: "http://www.hurriyetaile.com/userfiles/images/animation-1-3.gif"
 	});
 	}
-	*/
-if(cmd === `${prefix}gm`){
-		   if (text.length < 1) return message.channel.send("Can not announce nothing");
-		   message.channel.send("@everyone")
-		   message.channel.send("ddd")
-}
+	
+
 
 });
 
