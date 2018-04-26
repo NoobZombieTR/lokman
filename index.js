@@ -47,12 +47,12 @@ toMeme = toMeme[Math.floor(Math.random() * toMeme.length)]
     message.channel.send(toMeme)
 	}
 	
-if(cmd === `${prefix}gm`){
+/*if(cmd === `${prefix}gm`){
 		   if (text.length < 1) return message.channel.send("Can not announce nothing");
 		   message.channel.send("@everyone")
 		   message.channel.send("ddd")
 }
-
+*/
 });
 
 bot.login(process.env.BOT_TOKEN);
