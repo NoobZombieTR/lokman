@@ -34,7 +34,7 @@ var msg = message.content.toUpperCase();
 	}
 	
 
-	 async run(message) {
+	 /*async run(message) {
     let toMeme = ['https://i.redd.it/0ilh488xbudz.png',
       'https://cdn.discordapp.com/attachments/310611569794875404/353539349742092289/image.jpg',
       'http://weknowmemes.com/wp-content/uploads/2012/02/the-internet-is-a-series-of-tubes-and-theyre-full-of-cats.jpg',
@@ -47,22 +47,13 @@ var msg = message.content.toUpperCase();
     file: "http://www.hurriyetaile.com/userfiles/images/animation-1-3.gif"
 	});
 	}
+	*/
 if(cmd === `${prefix}gm`){
-async run(message, args) {
-		const annChan = this.client.channels.get('282977399761666059')
-		const annRole = message.guild.roles.get('338046233765478401')
-		annRole.setMentionable(true)
-    const embed = new RichEmbed()
-    .setAuthor(message.author.username, message.author.avatarURL)
-		.setDescription("s")
-		.setColor('0xFF0000')
-    .setTimestamp();
-    annChan.send('<@&338046233765478401>', { embed }).then((msg) => {
-        message.reply('Announcement sent!')
-		})
-		annRole.setMentionable(false)
-  }
+		   if (text.length < 1) return message.channel.send("Can not announce nothing");
+		   message.channel.send("@everyone")
+		   message.channel.send("ddd")
 }
+
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login("NDM4NDE2NTg0MzYxMzc3Nzk0.DcN5ng.6EHXF7ViTMP-IqO-yLDGTkzABTM");
