@@ -41,15 +41,18 @@ var msg = message.content.toUpperCase();
     let toMeme = ['https://i.redd.it/0ilh488xbudz.png',
       'https://cdn.discordapp.com/attachments/310611569794875404/353539349742092289/image.jpg',
       'http://weknowmemes.com/wp-content/uploads/2012/02/the-internet-is-a-series-of-tubes-and-theyre-full-of-cats.jpg',
-    	]
-		}
-
-		toMeme = toMeme[Math.floor(Math.random() * toMeme.length)]
-    	message.channel.send(toMeme)
+    ]
+}
+toMeme = toMeme[Math.floor(Math.random() * toMeme.length)]
+    message.channel.send(toMeme)
 	}
 	
-
+if(cmd === `${prefix}gm`){
+		   if (text.length < 1) return message.channel.send("Can not announce nothing");
+		   message.channel.send("@everyone")
+		   message.channel.send("ddd")
+}
 
 });
 
-bot.login("NDM4NDE2NTg0MzYxMzc3Nzk0.DcN5ng.6EHXF7ViTMP-IqO-yLDGTkzABTM");
+bot.login(process.env.BOT_TOKEN);
