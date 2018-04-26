@@ -54,7 +54,7 @@ async run(message, args) {
 		annRole.setMentionable(true)
     const embed = new RichEmbed()
     .setAuthor(message.author.username, message.author.avatarURL)
-		.setDescription(args.toAnn)
+		.setDescription("s")
 		.setColor('0xFF0000')
     .setTimestamp();
     annChan.send('<@&338046233765478401>', { embed }).then((msg) => {
