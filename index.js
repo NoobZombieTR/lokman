@@ -34,18 +34,18 @@ var msg = message.content.toUpperCase();
 	}
 	
 
-	 async run(message) {
+	 
+	
+	if(cmd === `${prefix}gif`){
+		async run(message) {
     let toMeme = ['https://i.redd.it/0ilh488xbudz.png',
       'https://cdn.discordapp.com/attachments/310611569794875404/353539349742092289/image.jpg',
       'http://weknowmemes.com/wp-content/uploads/2012/02/the-internet-is-a-series-of-tubes-and-theyre-full-of-cats.jpg',
-    ]
-}
-	toMeme = toMeme[Math.floor(Math.random() * toMeme.length)]
-    message.channel.send(toMeme)
-	if(cmd === `${prefix}gif`){
-	message.channel.send("", {
-    file: "http://www.hurriyetaile.com/userfiles/images/animation-1-3.gif"
-	});
+    	]
+		}
+
+		toMeme = toMeme[Math.floor(Math.random() * toMeme.length)]
+    	message.channel.send(toMeme)
 	}
 	
 
